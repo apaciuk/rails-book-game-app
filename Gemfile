@@ -71,6 +71,7 @@ group :test do
   gem 'rspec-rails'
   gem 'factory_bot_rails'
   gem 'shoulda-matchers', '~> 5.0'
+  gem 'rails-controller-testing'
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"

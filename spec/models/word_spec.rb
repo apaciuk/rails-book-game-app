@@ -1,5 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Word, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe 'columns' do
+    it { is_expected.to have_db_column(:value).of_type(:string) }
+    it { is_expected.to have_db_column(:language).of_type(:string) }
+  end
 end
