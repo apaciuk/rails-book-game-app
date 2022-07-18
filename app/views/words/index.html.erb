@@ -1,0 +1,12 @@
+<h1>Awesome Words</h1>
+<p> You have <%= @words.length %> words in your list. </p>
+<ul> 
+<% @words.each do |word| %>
+  <li><%= word.value %></li>
+<% end %>
+</ul>
+<p> <%= link_to 'Add a word' %></p>
+
+
+
+
