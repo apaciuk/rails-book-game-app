@@ -10,7 +10,7 @@ RSpec.describe WordsController, type: :controller do
 
         context 'when there are some words present' do 
             it 'assigns @words' do 
-                word = create(:word)
+                word = Word.create(value: 'word', language: 'en')
                 get :index
                 expect(assigns(:words)).to eq([word])
             end
