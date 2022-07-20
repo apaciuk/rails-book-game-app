@@ -54,7 +54,9 @@ RSpec.configure do |config|
   #     end
   #
   # The different available types are documented in the features, such as in
-  # https://relishapp.com/rspec/rspec-rails/docs
+  # https://relishapp.com/rspec/rspec-rails/docs 
+
+  config.include FactoryBot::Syntax::Methods
   Shoulda::Matchers.configure do |config|
   config.integrate do |with|
     with.test_framework :rspec
