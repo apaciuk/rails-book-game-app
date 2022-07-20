@@ -4,6 +4,7 @@ FactoryBot.define do
     last_name  { "Doe" }
     admin { false }
   end
+  factory :admin, class: "User"
   factory :word do
     value { "MyString" }
     language { "MyString" }
