@@ -13,5 +13,11 @@ class WordsController < ApplicationController
     else 
       render :new
     end
+  end 
+
+  private 
+
+  def word_params 
+    params.require(:word).permit(:value, :language)
   end
 end
